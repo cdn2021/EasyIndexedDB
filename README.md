@@ -3,7 +3,7 @@
 We sealed the operation of IndexedDB into a series of functions  
 Since IndexedDB is asynchronous, the last argument to our function is the name of the callback function, and when it is run, the program calls the callback function and passes the argument
 
-'''javascript
+```javascript
 var db = {};
 db.read = function (databaseName,version,table,key,...callback) {
 	let request = window.indexedDB.open(databaseName,version);
@@ -232,4 +232,4 @@ db.help = function()
 {
 	window.open("https://cdn2021.github.io/EasyIndexedDB/help");
 };
-'''
+```
